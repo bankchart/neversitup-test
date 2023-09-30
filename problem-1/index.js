@@ -1,8 +1,11 @@
 function shuffle(str) {
 	const kv = {}
 	const result = []
-	if (!str || typeof str !== 'string' || str.trim().length === 0) return []
-	if (str.length === 1) return str
+	str = str?.trim() || str
+
+	if (!str || typeof str !== 'string') return []
+	if (str.length === 1) return [str]
+	
 	for (let i = 0; i < str.length; i++) {
 		const head = str[i]
 		const nextShuffleItem = str.substring(0, i).concat(str.substring(i + 1))
@@ -16,4 +19,5 @@ function shuffle(str) {
 	return Object.keys(kv);
 }
 
-console.log(shuffle('abc'))
+module.exports = shuffle
+
