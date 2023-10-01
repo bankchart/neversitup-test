@@ -10,7 +10,7 @@ Set up the Node.js version to match my machine. Go to the root project directory
     The source code is stored in the 'problem-2' folder. To run the code, follow these steps:
     - $ npm ci
     - $ npm test
-- Find the odd int\
+- Count the smiley faces\
     The source code is stored in the 'problem-3' folder. To run the code, follow these steps:
     - $ npm ci
     - $ npm test
